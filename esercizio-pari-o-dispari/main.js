@@ -12,9 +12,18 @@ var numPc =  numero();
 var risultato = numUtente + numPc;
 console.log(numUtente, numPc, risultato);
 
-if ((utente === 'pari') && (risultato % 2 = 0)){
- document.getElementById('numero').innerHTML = "hai vinto";
+if (utente === 'pari' && risultato % 2 === 0) {
+ document.getElementById('numero').innerHTML = risultato + " Hai vinto!";
+}else if (utente === 'dispari'&& risultato % 2 === 0) {
+  document.getElementById('numero').innerHTML = risultato + " Hai perso!";
+} else if (utente === 'pari' && risultato % 2 === 1) {
+  document.getElementById('numero').innerHTML = risultato + " Hai perso!";
+} else {
+  document.getElementById('numero').innerHTML = risultato +" Hai vinto!";
 }
+
+
+
 
 
 
